@@ -1,5 +1,7 @@
 https://github.com/X-T-E-R/ShowFilmInfo
 
+https://greasyfork.org/zh-CN/scripts/488269-show-film-info-in-the-pirate-bay
+
 ## Introduction
 This is a Tampermonkey script designed to enhance The Pirate Bay by displaying posters, ratings, and translations using the TMDB API. It is recommended to apply for your own TMDB API key, as the provided public key may become unusable due to high traffic. For an optimal experience, use in conjunction with PhotoShow ([https://github.com/Mr-VincentW/PhotoShow](https://github.com/Mr-VincentW/PhotoShow)) (see image below).
 ## 中文介绍
