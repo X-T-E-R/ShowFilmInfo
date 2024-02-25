@@ -2,11 +2,11 @@
 // @name         Show Film Info in the Pirate Bay
 // @name:zh-cn   海盗湾增强，显示电影信息
 // @namespace    http://tampermonkey.net/
-// @version      1.0.2
+// @version      1.0.5
 // @description  Enhance The Pirate Bay by displaying film ratings and thumbnails next to film titles, with title preprocessing for better accuracy.
 // @description:zh-cn  这是一个油猴插件用于使用TMDB API在海盗湾中展示海报、评分和翻译。
 // @author       X-T-E-R
-// @include      *thepiratebay*
+// @match      *://*.thepiratebay3.to/*
 // @homepage     https://github.com/X-T-E-R/ShowFilmInfo
 // @license      MIT
 // @grant        GM_xmlhttpRequest
@@ -17,7 +17,7 @@
 
     const API_KEY = 'd8d9b241a36a8850e3df6a1ba60c6524';
 
-    const defaultKeywords = '2160p|1080p|720p|480p|BluRay|X264|AC3|Wi|HDTS|ADFREE|HDRip|DVDScr|WEBRip|BRRip|DVDRip';
+    const defaultKeywords = '2160p|1080p|720p|480p|BluRay|X264|AC3|HDTS|ADFREE|HDRip|DVDScr|WEBRip|BRRip|DVDRip';
     let keywords = localStorage.getItem('filmKeywords') || defaultKeywords;
 
     // Create and style floating panel
