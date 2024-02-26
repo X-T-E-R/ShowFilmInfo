@@ -2,14 +2,22 @@
 // @name         Show Film Info in the Pirate Bay
 // @name:zh-cn   海盗湾增强，显示电影信息
 // @namespace    http://tampermonkey.net/
-// @version      1.0.5
+// @version      1.1.2
 // @description  Enhance The Pirate Bay by displaying film ratings and thumbnails next to film titles, with title preprocessing for better accuracy.
 // @description:zh-cn  这是一个油猴插件用于使用TMDB API在海盗湾中展示海报、评分和翻译。
 // @author       X-T-E-R
 // @match      *://*.thepiratebay3.to/*
+// @match      *://prbay.*/*
+// @match      *://prbay.top/*
+// @match      *://prbay.xyz/*
+// @match      *://prbay.online/*
+
+
 // @homepage     https://github.com/X-T-E-R/ShowFilmInfo
 // @license      MIT
 // @grant        GM_xmlhttpRequest
+// @downloadURL https://update.greasyfork.org/scripts/488269/Show%20Film%20Info%20in%20the%20Pirate%20Bay.user.js
+// @updateURL https://update.greasyfork.org/scripts/488269/Show%20Film%20Info%20in%20the%20Pirate%20Bay.meta.js
 // ==/UserScript==
 
 (function() {
@@ -77,7 +85,8 @@
         };
 
         // 从localStorage中恢复单选框状态
-        const useTranslationSaved = localStorage.getItem('useTranslation') === 'true';
+        let useTranslation=localStorage.getItem('useTranslation')||'true';
+        const useTranslationSaved = useTranslation;
         useTranslationCheckbox.checked = useTranslationSaved;
         // 从localStorage中恢复下拉框状态
         const languageSelectSaved = localStorage.getItem('languageSelect');
