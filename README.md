@@ -6,8 +6,13 @@ https://greasyfork.org/zh-CN/scripts/488269-show-film-info-in-the-pirate-bay
 This is a Tampermonkey script designed to enhance The Pirate Bay by displaying posters, ratings, and translations using the TMDB API. It is recommended to apply for your own TMDB API key, as the provided public key may become unusable due to high traffic. For an optimal experience, use in conjunction with PhotoShow ([https://github.com/Mr-VincentW/PhotoShow](https://github.com/Mr-VincentW/PhotoShow)) (see image below).
 ## 中文介绍
 这是一个油猴插件用于使用TMDB API在海盗湾中展示海报、评分和翻译。
+
 建议自行申请一个TMDB 的api key，我提供了一个公用的，但是可能会因为使用人数过多而炸了
+
 搭配浮图秀（[https://github.com/Mr-VincentW/PhotoShow](https://github.com/Mr-VincentW/PhotoShow)）使用更佳（见下图）
+
+如果人在国内，连不上海盗湾的话可以试试https://prbay.top/ https://prbay.online/ 这两个镜像（注意开广告拦截工具，不然可能有潜在的恼人事物）。
+
 ## Screenshots
 #### Translated to Chinese
 ![image.png](https://cdn.nlark.com/yuque/0/2024/png/35975318/1708865067816-615b266e-8e19-481d-bb4c-5b1f8b2ac643.png#averageHue=%23f0ece7&clientId=u1908940a-19b4-4&from=paste&height=947&id=u26c4fa06&originHeight=1894&originWidth=2413&originalType=binary&ratio=2&rotation=0&showTitle=false&size=715100&status=done&style=none&taskId=ucc59abb4-fab9-4800-a163-5526e59c4c3&title=&width=1206.5)
